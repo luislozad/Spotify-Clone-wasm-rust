@@ -3,6 +3,7 @@ use yew::prelude::*;
 mod components;
 mod types;
 mod helpers;
+mod lang;
 
 use crate::components::prelude::*;
 
