@@ -25,7 +25,7 @@ pub mod prelude {
     pub use super::layout::Layout;
     pub use super::layouts::user_content::UserContent;
     pub use super::layouts::user_page::UserPage;
-    pub use super::context::{AppContext, AppContextProvider};
+    pub use super::context::{AppContext, AppContextProvider, AppContextProps};
     pub use super::logo::Logo;
     pub use super::user_list::UserList;
 }
