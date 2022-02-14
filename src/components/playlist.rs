@@ -1,7 +1,7 @@
 use yew::prelude::*;
 
-#[function_component(Playlists)]
-pub fn playlists() -> Html {
+#[function_component(Playlist)]
+pub fn playlist() -> Html {
     html! {
         <div>
             {"Lista de reproduccion"}

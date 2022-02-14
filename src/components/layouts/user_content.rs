@@ -6,7 +6,7 @@ use crate::components::grid::{Grid, Row};
 #[function_component(UserContent)]
 pub fn user_content() -> Html {
     html! {
-        <div class={classes!("pt-6", "bg-black")}>
+        <div class={classes!("pt-6", "bg-black", "text-color-second")}>
             <Container>
                 <Grid>
                     <Row>

@@ -27,6 +27,20 @@ pub struct PropsColumn {
     pub width: u8,
     #[prop_or(true)]
     pub padded: bool,
+
+    #[prop_or_default]
+    pub sm: Option<u8>,
+    #[prop_or_default]
+    pub md: Option<u8>,
+    #[prop_or_default]
+    pub lg: Option<u8>,
+    #[prop_or_default]
+    pub xl: Option<u8>,
+    #[prop_or_default]
+    pub xxl: Option<u8>,
+
+    #[prop_or_default]
+    pub width_style: Option<WidthColumn>,
 }
 
 #[function_component(Grid)]
@@ -56,8 +70,15 @@ pub fn row(props: &PropsRow) -> Html {
 #[function_component(Column)]
 pub fn column(props: &PropsColumn) -> Html {
     let GridContext { columns, .. } = use_context::<GridContext>().expect("no GridContext found");
+    let PropsColumn { ref width_style, .. } = *props;
 
-    let class_width = get_class_width_column(columns.clone(), props.width);
+    let w_style = if width_style.is_some() {
+        width_style.as_ref().unwrap().clone()
+    } else {
+        columns.clone()
+    };
+
+    let class_width = get_class_width_column(w_style, props.width);
     let class_padding = {
         if props.padded {
             "px-4"

@@ -1,67 +1,3 @@
-.w-column-one {
-    width: 6.25%;
-}
-
-.w-column-two {
-    width: 12.5%;
-}
-
-.w-column-three {
-    width: 18.75%;
-}
-
-.w-column-four {
-    width: 25%;
-}
-
-.w-column-five {
-    width: 31.25%;
-}
-
-.w-column-six {
-    width: 37.5%;
-}
-
-.w-column-seven {
-    width: 43.75%;
-}
-
-.w-column-eight {
-    width: 50%;
-}
-
-.w-column-nine {
-    width: 56.25%;
-}
-
-.w-column-ten {
-    width: 62.5%;
-}
-
-.w-column-eleven {
-    width: 68.75%;
-}
-
-.w-column-twelve {
-    width: 75%;
-}
-
-.w-column-thirteen {
-    width: 81.25%;
-}
-
-.w-column-fourteen {
-    width: 87.5%;
-}
-
-.w-column-fifteen {
-    width: 93.75%;
-}
-
-.w-column-sixteen {
-    width: 100%;
-}
-
 .w-column-1 {
     width: 1%;
   }
@@ -460,4 +396,28 @@
   
   .w-column-100 {
     width: 100%;
+  }
+
+  .text-color-second {
+    color: #b3b3b3;
+    fill: #b3b3b3;
+  }
+
+  .icon-color {
+    fill: inherit;
+  }
+
+  .user-nav span {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .logo svg {
+    height: 40px;
+    max-width: 131px;
+    width: 100%;
+  }
+
+  .control-playlist a {
+    font-size: 14px;
   }
